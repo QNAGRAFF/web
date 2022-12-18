@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Qna Graffiti (Home Page)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    <!--Extra-->
+    <form>
+      <center><label for="promoCode" class="PromoText">Enter your promo code:</label><br></center>
+      <center><input type="text" id="promoCode" name="promoCode" class="PromoBox"><br></center>
+      <center><button type="submit" onclick="redeemCode()" class="PromoRedeem">Redeem</button></center>
+    </form> 
+    <style>
+      .PromoText{
+        font-family: 'Permanent Marker', cursive;
+        color: white;
+        font-size: x-large;
+      }
+      .PromoRedeem{
+        font-family: 'Permanent Marker', cursive;
+        color: white;
+        font-size: x-large;
+        background-color: #228b22;
+        margin-top: 10px;
+
+      }
+      .PromoBox{
+        font-size: large;
+        font-family: 'Permanent Marker', cursive;
+        color: black;
+      }
+    </style>
+    <script>
+      function redeemCode() {
+        // Get the promo code from the input field
+        var promoCode = document.getElementById("promoCode").value;
+    
+        // Check if the promo code is valid
+        if (promoCode === "Chirstmas2022") {
+          // If the promo code is valid, set the premium status to true in local storage
+          localStorage.setItem("isPremium", true);
+          alert("Promo code applied successfully! You are now a premium user.");
+        } else {
+          // If the promo code is invalid, display an error message
+          alert("Sorry, that promo code is not valid.");
+        }
+      }
+    
+      function goToPremiumPage() {
+        // Check if the user is a premium user
+        if (localStorage.getItem("isPremium") === "true") {
+          // If the user is a premium user, navigate to the premium page
+          window.location.href = "https://www.example.com/premium";
+        } else {
+          // If the user is not a premium user, display an error message
+          alert("You are not a premium user.");
+        }
+      }
+    </script>
+    <button class="LimitedChristmas" onclick="Limited()">Limited Time!</button>  
+    <center><button class="HomePage" onclick="Current()">Questions / answers (Current Page)</button></center>
+    <center><button class="PremiumPage" onclick="goToPremiumPage()">Premium Page!</button></center>
+    <center><button class="SupportPage" onclick="alrt2()">Coming Soon!</button></center>
+    <center><h1 class="Text">Welcome To Graffiti QNA!</h1></center>
+    <center><h2 class="Text">On this website you will find alot of questions you will want to know or need to know if you dont see any you want to know email us at (qnagraff1@gmail.com) and request your question and we will answer!</h2></center>
+    <!--Start-->
+    <center><Button class="InfoButton">#1</Button></center>
+    <center><h1 class="Text">Request By (System): Is Graffiti Illegal?</h1></center>
+    <center><h2 class="Info">Yes graffiti is illegal to an extent (mural artist / permitted artist) more than likley have permission to do it, without any permission by the (property owner and or city) you "CAN NOT" Legally Write Graffiti!</h2></center>
+    <center><Button class="InfoButton">#2</Button></center>
+    <center><h1 class="Text">Request By (System): Is Sticker Slapping Illegal?</h1></center>
+    <center><h2 class="Info">Short answer is yes and no while its still illegal by law if you can take it off without leaving perminate damage then you should not worry but not only that cops dont really pay attention to stickers more so tags and throws!</h2></center>
+    <center><Button class="InfoButton">#3</Button></center>
+    <center><h1 class="Text">Request By (System): Can i get in trouble doing graffiti?</h1></center>
+    <center><h2 class="Info">Yes if its on (public property) if you own (x property) then you can do what ever you want to it "But" if it is owned by someone else or a city you can face up to months or even years depending on the amount of graffiti! "Note: Most of the time you will have to spend the night or day in jail and just pay some fines depending on your situation"</h2></center>
+    <center><Button class="InfoButton">#4</Button></center>
+    <center><h1 class="Text">Request By (System): Whats the easiest style to first learn?</h1></center>
+    <center><h2 class="Info">Tagging would be the first thing to learn but if your talking about (2d styles) then in my opinion it would go from (Straight Letter -> Throw-Ups -> Pieces -> WildStyles -> Burners!)</h2></center>
+    <center><Button class="InfoButton">#5</Button></center>
+    <center><h1 class="Text">Request By (System): Where can i find good graffiti Supplies?</h1></center>
+    <center><h2 class="Info">You can find graffiti supplies in any sort of art store but if your looking for specific type stuff there will be some links below this to help you out (use link checker if you dont trust links)!</h2></center>
+    <center><a href="https://shop.bombingscience.com/" target="_blank" class="LINK">https://shop.bombingscience.com/</a></center>
+    <center><a href="https://blankslaps.com/" target="_blank" class="LINK">https://blankslaps.com/</a></center>
+    <center><a href="https://www.graff-city.com/" target="_blank" class="LINK">https://www.graff-city.com/</a></center>
+    <center><h1 class="Text">Nothing to see here :)</h1></center>
+</head>
+<body>
+<center><button class="BackToTheTop" onclick="Return()">Return To Top!</button></center>
+<script>
+        function Return(){
+            document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    function alrt1(){
+        alert("This is coming soon!");
+    }
+    function alrt2(){
+        alert("This is coming soon!");
+    }
+    function Current(){
+        alert("You are already on this page!")
+    }
+    function Limited(){
+       location.href="file:///C:/Users/konno/Desktop/QNAGRAFF/limitedshop.html"
+    }
+</script>
+<style>
+    .LimitedChristmas{
+      background: linear-gradient(to right, #b22222, #228b22);
+      background-size: 400% 400%;
+  
+      -webkit-animation: AnimationName 10s ease infinite;
+      -moz-animation: AnimationName 10s ease infinite;
+      animation: AnimationName 10s ease infinite;
+    }
+  
+    @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    @keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="limitedstyle.css">
+<title>Limited Shop (Home Page)</title>
+<center><h1 class="Title">Limited Time Shop (Ends 1/19/2023)</h1></center>
+<html>
+<body>
+  <div class="image-box">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.freepik.com%2Ffree-vector%2Fbusiness-template-with-red-free-gift-white-background-banner-design-business-template-present-gift-box-icon_100456-1525.jpg&f=1&nofb=1&ipt=a81deeed0bfceaf44417b16b8ae6f21ac0bfa84e568310959cfb114ca3294af3&ipo=images" alt="My Image">
+  </div>
+  <center><h1 class="FreeGiftInfo">After clicking the claim button you will be sent a prompt showing you a RNG code you can get as many codes as you want but when premium comes out it will only work 1 time so yea enjoy!</h1></center>
+  <style>
+    .purchase-button {
+      display: inline-block;
+      padding: 0.35em 1.2em;
+      border: 0.1em solid #FFFFFF;
+      margin: 0 0.3em 0.3em 0;
+      border-radius: 0.12em;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Permanent Marker', cursive;
+      font-weight: 300;
+      color: #FFFFFF;
+      background-color: #00ff26;
+      text-align: center;
+      transition: all 0.2s;
+      font-size: xx-large;
+    }
+  
+    .purchase-button:hover {
+      color: #8e8e8e;
+      background-color: #00a62a;
+    }
+  </style>
+  
+  <center><button class="purchase-button" id="code-button" onclick="generateCode()">Claim Reward!</button></center>
+  <script>
+    // Generate a random 6-digit code
+    function generateCode() {
+      return Math.floor(100000 + Math.random() * 900000);
+    }
+  
+    // Display the code in an alert box
+    function showCode() {
+      alert("Here is your code: Christmas2022");
+    }
+  
+    // Get the button element
+    var button = document.getElementById("code-button");
+  
+    // Check if the cookie exists
+    if (getCookie("codeClaimed") !== "true") {
+      // The cookie does not exist or is not set to "true"
+      // Set the cookie to "false"
+      setCookie("codeClaimed", "false", 365);
+    }
+  
+    // Check if the button has been claimed
+    if (getCookie("codeClaimed") === "true") {
+      // The button has been claimed
+      button.innerHTML = "Claimed!";
+      button.disabled = true;
+    } else {
+      // The button has not been claimed
+      // Add a click event listener to the button
+      button.addEventListener("click", function() {
+        showCode();
+        button.innerHTML = "Claimed!";
+        button.disabled = true;
+  
+        // Set the cookie to "true"
+        setCookie("codeClaimed", "true", 365);
+      });
+    }
+  
+    // Set a cookie with the given name, value, and expiration (in days)
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+  
+    // Get the value of a cookie with the given name
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+  </script> 
+  <style>
+    .FreeGiftInfo{
+        font-family: 'Permanent Marker', cursive;
+    color: white;
+    font-size: xxx-large;
+    font-weight: 100%;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+margin-top: -250px;
+    }
+   .image-box {
+  text-align: center;
+  border: 1px solid black;
+  background-color: lightgray;
+  width: 0px;
+  height: 0px;
+  margin: 600px;
+  margin-top: 50px;
+}
+
+  
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
+  </style>
+  
+</body>
+</html>
+</head>
+<body>
+
+</body>
+<style>
+    body {
+      background: linear-gradient(to right, #b22222, #228b22);
+      background-size: 400% 400%;
+  
+      -webkit-animation: AnimationName 10s ease infinite;
+      -moz-animation: AnimationName 10s ease infinite;
+      animation: AnimationName 10s ease infinite;
+    }
+  
+    @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    @keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+  </style>
+  
+</html>

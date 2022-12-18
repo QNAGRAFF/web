@@ -1,0 +1,117 @@
+
+html{
+    background-color: dimgray;
+}
+.Text{
+    background: rgb(53, 53, 53);
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+.Text:hover{
+    background-color: black;
+}
+.Info{
+    background: rgb(53, 53, 53);
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+.Info:hover{
+    font-size: xx-large;
+    background-color: black;
+}
+.HomePage{
+    color: white;
+    background-color: cornflowerblue;
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+    cursor: pointer;
+    border-radius: 15%;
+}
+.HomePage:hover{
+    background-color: rgba(100, 148, 237, 0.4);
+    font-size: xx-large;
+}
+.PremiumPage{
+    color: white;
+    background-color: cornflowerblue;
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 15%;
+}
+.PremiumPage:hover{
+    background-color: rgba(100, 148, 237, 0.4);
+    font-size: xx-large;
+}
+.SupportPage{
+    color: white;
+    background-color: cornflowerblue;
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 15%;
+}
+.SupportPage:hover{
+    background-color: rgba(100, 148, 237, 0.4);
+    font-size: xx-large;
+}
+.InfoButton{
+    color: white;
+    background-color: rgb(5, 47, 126);
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 1rem 1rem;
+    margin-top: 20px;
+    border-radius: 100%;
+}
+.InfoButton:hover{
+    font-size: xx-large;
+}
+.LINK{
+   font-size: x-large;
+   font-weight: 100px;
+   color: lightskyblue;
+   font-family: 'Permanent Marker', cursive;
+}
+.LINK:hover{
+    color: darkblue;
+    font-size: xx-large;
+}
+.BackToTheTop{
+    color: white;
+    background-color: cornflowerblue;
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 15%; 
+}
+.BackToTheTop:hover{
+    background-color: rgba(100, 148, 237, 0.4);
+    font-size: xx-large;
+}
+::-webkit-scrollbar{
+    width: 0.1in;
+    background-color: rgb(56, 56, 56);
+}
+::-webkit-scrollbar-button{
+    background-color: rgb(23, 23, 23);
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+.LimitedChristmas{
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 1rem 1rem;
+    margin-top: 20px;
+    border-radius: 15%;
+    color: white;
+}
+.LimitedChristmas:hover{
+    font-size: xx-large;
+}

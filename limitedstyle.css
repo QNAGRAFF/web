@@ -1,0 +1,18 @@
+.Title{
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    font-size: xxx-large;
+    font-weight: 100%;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+}
+::-webkit-scrollbar{
+    width: 0.1in;
+    background-color: rgb(56, 56, 56);
+}
+::-webkit-scrollbar-button{
+    background-color: rgb(23, 23, 23);
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+}
